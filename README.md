@@ -4,6 +4,7 @@
 
 + [О репозитории](#about)
 + [Гайды](#guides)
++ [Ссылки](#links)
 
 ## 🧐 О репозитории <a name = "about"></a>
 
@@ -12,3 +13,7 @@
 ## 📑 Гайды <a name = "guides"></a>
 
 + [Frontend guide](./frontend_guide.md)
+
+## 📎 Ссылки <a name = "links"></a>
+
++ [Расширения для VSCode](./ide_extensions.md)

@@ -1,3 +1,6 @@
+
+var START_URL = process.env.NODE_ENV === 'production' ? '/frontend-tips/' : '/';
+
 module.exports = {
   siteMetadata: {
     title: `Frontend Tips`,
@@ -5,12 +8,13 @@ module.exports = {
       name: `Alex Mubarakshin`,
       summary: `just dev.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Frontend Tips`,
+    siteUrl: `https://alexmubarakshin.github.io/frontend-tips/`,
     social: {
       twitter: ``,
     },
   },
+  pathPrefix: START_URL,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

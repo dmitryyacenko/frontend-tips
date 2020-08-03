@@ -1,4 +1,10 @@
-# Расшриения для IDE
+---
+path: "/blog/ide_extensions"
+date: "2020-06-01"
+title: "Расшриения для IDE"
+description: ""
+tags: ["extensions", "vscode"]
+---
 
 Здесь собраны полезные расширения для VS Code, но думаю для остальных можно найти такие же аналоги.
 

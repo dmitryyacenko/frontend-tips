@@ -1,11 +1,37 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
+import { WindowLocation } from '@reach/router';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm, scale } from '../utils/typography';
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+type BlogPostTemplateProps = {
+  data: {
+    site: {
+      siteMetadata: {
+        siteName: string;
+        title: string;
+      };
+    };
+    markdownRemark: {
+      html?: string;
+      excerpt?: string;
+      frontmatter: {
+        title: string;
+        date: string;
+        description?: string;
+      };
+    };
+  };
+  location: WindowLocation<WindowLocation['state']>;
+  pageContext: {
+    previous: any;
+    next: any;
+  };
+};
+
+const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({ data, pageContext, location }) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;

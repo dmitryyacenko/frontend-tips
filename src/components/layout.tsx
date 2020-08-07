@@ -7,7 +7,7 @@ import { rhythm, scale } from '../utils/typography';
 type LayoutProps = {
   location: WindowLocation<WindowLocation['state']>;
   title: string;
-}
+};
 
 const Layout: React.FC<LayoutProps> = ({ location, title, children }) => {
   // @ts-ignore
@@ -65,8 +65,7 @@ const Layout: React.FC<LayoutProps> = ({ location, title, children }) => {
     >
       <header>{header}</header>
       <main>{children}</main>
-      <footer>
-      </footer>
+      <footer />
     </div>
   );
 };

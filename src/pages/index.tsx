@@ -8,7 +8,7 @@ import { rhythm } from '../utils/typography';
 type BlogIndexProps = PageProps<{
   allMarkdownRemark: any;
   site: any;
-}>
+}>;
 
 const BlogIndex: React.FC<BlogIndexProps> = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;

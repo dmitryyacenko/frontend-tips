@@ -1,4 +1,4 @@
-declare const __PATH_PREFIX__: string
+declare const __PATH_PREFIX__: string;
 
 declare module '*.png' {
   const value: any;
@@ -39,7 +39,7 @@ export type TSite = {
     author: string;
     description: string;
     siteUrl: string;
-    social: {};
+    social: Record<string, unknown>;
     title: string;
   };
   pathPrefix: string;
